@@ -1,4 +1,13 @@
-### MYSQL SERVER INSTALLATION
+### (I)HOW TO LOGIN INTO MYSQL
+# * must have mysql installed first(if not go to second section)
+Login Workflow:
+
+- open terminal
+- type "mysql -u root -p" 
+    - enter root password
+- Start DB Initalziation and Testing
+
+### (II) MYSQL SERVER INSTALLATION
 
 # for Ubunntu/fedora/
 - dnf install mysql
@@ -32,3 +41,4 @@ Restart mysql
 
 Start myql
 - mysql.server start
+
