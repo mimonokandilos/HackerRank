@@ -1,6 +1,18 @@
 -- DB SCRIPT
 -- RUN ENTIRE SCRIPT~
---                      1) DB : HackerRank
+--           (I) DB : HackerRank
+--              QUESTION #1
+--                          1) TABLE : price_today
+--                              a. stock_code : VARCHAR(200) : Primary Key
+--                                  - stock code
+--                              b. price : INT
+--                                  - shows price of today
+--                          2) TABLE : price_tomorrow
+--                              a. stock_code : VARCHAR(200) : Primary Key
+--                                  - stock code
+--                              b. price : INT
+--                                  - shows price of tomorrow
+--              QUESTION #2
 --                          1) TABLE : price_today
 --                              a. stock_code : VARCHAR(200) : Primary Key
 --                                  - stock code
