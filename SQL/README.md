@@ -1,5 +1,5 @@
-### (I)HOW TO LOGIN INTO MYSQL
-# * must have mysql installed first(if not go to second section)
+# (I)HOW TO LOGIN INTO MYSQL
+### * must have mysql installed first(if not go to second section)
 Login Workflow:
 
 - open terminal
@@ -7,9 +7,9 @@ Login Workflow:
     - enter root password
 - Start DB Initalziation and Testing
 
-### (II) MYSQL SERVER INSTALLATION
+# (II) MYSQL SERVER INSTALLATION
 
-# for Ubunntu/fedora/
+### for Ubunntu/fedora/
 - dnf install mysql
 - yum install mysql
 - apt install mysql
@@ -27,7 +27,7 @@ Start myql
 - systemctl start mysql(d)
 
 
-# for Mac
+### for Mac
 - brew install mysql
 
 - mysql_sercure_installation
