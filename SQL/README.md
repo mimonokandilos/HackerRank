@@ -39,8 +39,8 @@ Login Workflow:
 
 
 # (II) MYSQL SERVER INSTALLATION
-
-### OS == Ubuntu or fedora
+** depending on ur OS choose either 1 or 2!!!
+### (1) OS == Ubuntu or fedora
 ####    Install MYSQL
         - dnf install mysql
         -- OR
@@ -61,7 +61,7 @@ Login Workflow:
         Start myql
             - systemctl start mysql(d)
 
-### OS == MacOS
+### (2) OS == MacOS
 ####    Install MYSQL
         - brew install mysql
 
