@@ -12,16 +12,18 @@ Login Workflow:
 ### 1.  Create SQL Relations == createEnvironment.sql
 -           (I) DB : HackerRank
                QUESTION #1
-                           (1) TABLE : price_today
-                               a. stock_code : VARCHAR(200) : Primary Key
-                                   - stock code
-                               b. price : INT
-                                   - shows price of today
-                           (2) TABLE : price_tomorrow
-                               a. stock_code : VARCHAR(200) : Primary Key
-                                   - stock code
-                               b. price : INT
-                                   - shows price of tomorrow
+                           (1) TABLE : employee_information
+                               a. employee_ID : INT : Primary Key
+                                   - unique id for each employee
+                               b. name : VARCHAR(200)
+                                   - shows name attributed to the employee_id
+                               c. division : VARCHAR(200)
+                                   - shows what division employee is a part of
+                           (2) TABLE : last_quarter_bonus
+                               a. employee_ID : INT : Primary Key
+                                   - unique id for each employee
+                               b. bonus : INT
+                                   - number value for possible bonus
                QUESTION #2
                            (1) TABLE : price_today
                                a. stock_code : VARCHAR(200) : Primary Key
@@ -38,7 +40,8 @@ Login Workflow:
 
 # (II) MYSQL SERVER INSTALLATION
 
-### for Ubunntu/fedora/
+### OS == Ubuntu or fedora
+#### Install MYSQL
 - dnf install mysql
 - yum install mysql
 - apt install mysql
@@ -46,6 +49,7 @@ Login Workflow:
 - mysql_sercure_installation
     - set root password, plus securly install mysql
 
+#### MYSQL Administration
 Check Mysql status
 - systemctl status mysql(d)
 
@@ -55,13 +59,14 @@ Restart mysql
 Start myql
 - systemctl start mysql(d)
 
-
-### for Mac
+### OS == MacOS
+#### Install MYSQL
 - brew install mysql
 
 - mysql_sercure_installation
    - set root password, plus securly install mysql
 
+#### MYSQL Administration
 Check Mysql status
 - mysql.server status
 
