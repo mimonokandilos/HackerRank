@@ -1,32 +1,37 @@
-#Implement two classes:
 
-#-----Rectangle-----
+# create class: VendingMachine
+# 1) consturctor VendingMachine(num_items, item_price)
+# 2)method buy(req_items, money)
+# if enough items to serve request and money given is suffiecient  return an integer dentoting the change given back
+# if fewer items through excpretion not enough items 
+# if there is enough item but not enough money through excpetion not enough coins
 
-# The constructor for rectangle must take two arguments that denote the lengths of the rectangle's sides.
-# The class must have an area that returns the area of the rectangle.
-
-#-----Circle--------
-
-# The constructor for circle must take one argument that denotes the radius of the circle.
-# The circle class must have an area method that returns the area of the circle. To implement
-# the area method, use a precise Pi value, preferably the constant math.pi.
+#!/bin/python3
 
 import math
+import os
+import random
+import re
+import sys
 
-class Rectangle:
-    def __init__(self, length, width):
-        self.length = length
-        self.width = width 
-    
-    def area(self):
-        return self.length * self.width
 
-class Circle:
-    def __init__(self, radius):
-        self.radius = radius
+class VendingMachine:
+    # Implement the VendingMachine here
+    pass
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
-    def area(self):
-        return math.pi * (self.radius ** 2)
+    num_items, item_coins = map(int, input().split())
+    machine = VendingMachine(num_items, item_coins)
 
-#if __name__ == '__main__': 
+    n = int(input())
+    for _ in range(n):
+        num_items, num_coins = map(int, input().split())
+        try:
+            change = machine.buy(num_items, num_coins)
+            fptr.write(str(change) + "\n")
+        except ValueError as e:
+            fptr.write(str(e) + "\n")
 
+
+    fptr.close()
