@@ -38,4 +38,15 @@ class Circle:
     def area(self):
         return math.pi * (self.radius ** 2)
 
-#if __name__ == '__main__': 
+if __name__ == '__main__':
+    # Create a Rectangle object with length 5 and width 10
+    rect = Rectangle(5, 10)
+    # Compute and print the area of the rectangle
+    rect_area = rect.area()
+    print(f"Rectangle area: {rect_area}")
+    
+    # Create a Circle object with radius 3
+    circ = Circle(3)
+    # Compute and print the area of the circle
+    circ_area = circ.area()
+    print(f"Circle area: {circ_area}")
