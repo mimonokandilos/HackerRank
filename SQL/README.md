@@ -1,11 +1,40 @@
-# (I)HOW TO LOGIN INTO MYSQL
-### * must have mysql installed first(if not go to second section)
+# (I) LOGIN INTO MYSQL(HOW TO)
+### * must have mysql installed first(if not go to LAST section)
 Login Workflow:
 
 - open terminal
 - type "mysql -u root -p" 
     - enter root password
 - Start DB Initalziation and Testing
+
+
+# (II) PROBLEM & SOLUTION DESCRIPTION
+### 1.  Create SQL Relations == createEnvironment.sql
+-           (I) DB : HackerRank
+-              QUESTION #1
+-                          (1) TABLE : price_today
+-                              a. stock_code : VARCHAR(200) : Primary Key
+-                                  - stock code
+-                              b. price : INT
+-                                  - shows price of today
+-                          (2) TABLE : price_tomorrow
+-                              a. stock_code : VARCHAR(200) : Primary Key
+-                                  - stock code
+-                              b. price : INT
+-                                  - shows price of tomorrow
+-              QUESTION #2
+-                          (1) TABLE : price_today
+-                              a. stock_code : VARCHAR(200) : Primary Key
+-                                  - stock code
+-                              b. price : INT
+-                                  - shows price of today
+-                          (2) TABLE : price_tomorrow
+-                              a. stock_code : VARCHAR(200) : Primary Key
+-                                  - stock code
+-                              b. price : INT
+-                                  - shows price of tomorrow
+### 2. Test SQL Relations == testEnvironment.sql + solnHackerRank.sql
+
 
 # (II) MYSQL SERVER INSTALLATION
 

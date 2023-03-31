@@ -1,28 +1,38 @@
--- DB SCRIPT
--- RUN ENTIRE SCRIPT~
---           (I) DB : HackerRank
+-- DB SCRIPT -> (I) DB : HackerRank
+-- RUN ENTIRE SCRIPT~ Q1(test) only then Q2(and test)
+
+
 --              QUESTION #1
---                          1) TABLE : price_today
---                              a. stock_code : VARCHAR(200) : Primary Key
---                                  - stock code
---                              b. price : INT
---                                  - shows price of today
---                          2) TABLE : price_tomorrow
---                              a. stock_code : VARCHAR(200) : Primary Key
---                                  - stock code
---                              b. price : INT
---                                  - shows price of tomorrow
+DROP DATABASE HackerRank; 
+
+CREATE DATABASE IF NOT EXISTS HackerRank;
+
+CREATE TABLE HackerRank.employee_information (
+    employee_ID INT NOT NULL PRIMARY KEY,
+    name VARCHAR(200) NOT NULL,
+    division VARCHAR(200) NOT NULL
+);
+CREATE TABLE HackerRank.last_quarter_bonus (
+    employee_ID INT NOT NULL PRIMARY KEY,
+    bonus INT NOT NULL
+);
+
+INSERT INTO HackerRank.employee_information (employee_ID, name, division) VALUES 
+    (1, 'Julia', 'HR'),
+    (2, 'Samantha', 'Tech'),
+    (3, 'Richard', 'HR');
+
+INSERT INTO HackerRank.last_quarter_bonus (employee_ID, bonus) VALUES 
+    (1, 2000),
+    (2, 5500),
+    (3, 6240);
+
+
+
+
+
+
 --              QUESTION #2
---                          1) TABLE : price_today
---                              a. stock_code : VARCHAR(200) : Primary Key
---                                  - stock code
---                              b. price : INT
---                                  - shows price of today
---                          2) TABLE : price_tomorrow
---                              a. stock_code : VARCHAR(200) : Primary Key
---                                  - stock code
---                              b. price : INT
---                                  - shows price of tomorrow
 
 
 DROP DATABASE HackerRank; 
