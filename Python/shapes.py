@@ -1,4 +1,8 @@
 #Implement two classes:
+# rectangle: constructor= must take two args that denote length of sides
+# class= must have an area method returns area of the rectangle
+# circle constructor= one arg that denotes the radius of the circle
+# class=method returns the area of circle use precise pi constant math.pi
 
 #-----Rectangle-----
 
@@ -11,7 +15,13 @@
 # The circle class must have an area method that returns the area of the circle. To implement
 # the area method, use a precise Pi value, preferably the constant math.pi.
 
+#!/bin/python
+
 import math
+import os
+import random
+import re
+import sys
 
 class Rectangle:
     def __init__(self, length, width):
