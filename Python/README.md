@@ -7,13 +7,13 @@ Login Workflow:
     - run : "python3"
     - exit : "CTRL-D"
 - (3) GOTO folder with .py file
-    - run : 
-- Start DB Initalziation and Testing
+    - run : "python3 {name}.py"
+
+
 
 
 # (II) PROBLEM & SOLUTION DESCRIPTION
 ### 1. Python File Description
-
 - QUESTION #1
     DESCRIPTION:
         create class: VendingMachine
@@ -30,12 +30,19 @@ Login Workflow:
         circle constructor= one arg that denotes the radius of the circle
         class=method returns the area of circle use precise pi constant math.pi
 
+
+
+
 ### 2. Test Python Files:
 - QUESTION #1
     run: "python3 vendingMachine.py"
 
 - QUESTION #2
     run: "python3 circle.py"
+
+
+
+
 
 # (II) Python3 INSTALLATION
 
