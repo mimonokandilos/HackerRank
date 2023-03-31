@@ -41,7 +41,7 @@ Login Workflow:
 # (II) MYSQL SERVER INSTALLATION
 
 ### OS == Ubuntu or fedora
-#### Install MYSQL
+####    Install MYSQL
         - dnf install mysql
         -- OR
         - yum install mysql
@@ -51,7 +51,7 @@ Login Workflow:
         - mysql_sercure_installation
             - set root password, plus securly install mysql
 
-#### MYSQL Administration
+####     MYSQL Administration
         Check Mysql status
             - systemctl status mysql(d)
 
@@ -62,13 +62,13 @@ Login Workflow:
             - systemctl start mysql(d)
 
 ### OS == MacOS
-#### Install MYSQL
+####    Install MYSQL
         - brew install mysql
 
         - mysql_sercure_installation
             - set root password, plus securly install mysql
 
-#### MYSQL Administration
+####     MYSQL Administration
         Check Mysql status
             - mysql.server status
 
