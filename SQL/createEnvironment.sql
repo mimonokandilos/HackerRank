@@ -2,6 +2,9 @@
 -- RUN ENTIRE SCRIPT~ Q1(test) only then Q2(and test)
 
 
+
+
+
 --              QUESTION #1
 DROP DATABASE HackerRank; 
 
