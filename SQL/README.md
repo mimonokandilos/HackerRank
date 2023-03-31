@@ -42,37 +42,39 @@ Login Workflow:
 
 ### OS == Ubuntu or fedora
 #### Install MYSQL
-- dnf install mysql
-- yum install mysql
-- apt install mysql
+        - dnf install mysql
+        -- OR
+        - yum install mysql
+        -- OR
+        - apt install mysql
 
-- mysql_sercure_installation
-    - set root password, plus securly install mysql
+        - mysql_sercure_installation
+            - set root password, plus securly install mysql
 
 #### MYSQL Administration
-Check Mysql status
-- systemctl status mysql(d)
+        Check Mysql status
+            - systemctl status mysql(d)
 
-Restart mysql
-- systemctl restart mysql(d)
+        Restart mysql
+            - systemctl restart mysql(d)
 
-Start myql
-- systemctl start mysql(d)
+        Start myql
+            - systemctl start mysql(d)
 
 ### OS == MacOS
 #### Install MYSQL
-- brew install mysql
+        - brew install mysql
 
-- mysql_sercure_installation
-   - set root password, plus securly install mysql
+        - mysql_sercure_installation
+            - set root password, plus securly install mysql
 
 #### MYSQL Administration
-Check Mysql status
-- mysql.server status
+        Check Mysql status
+            - mysql.server status
 
-Restart mysql
-- mysql.server restart
+        Restart mysql
+            - mysql.server restart
 
-Start myql
-- mysql.server start
+        Start myql
+            - mysql.server start
 
